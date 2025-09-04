@@ -1,450 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Ordering</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="online-ordering.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ordering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="online-ordering.css">
 </head>
 
 <body>
-  <header>
-    <img src="assets/logo.png" alt="Logo">
-  </header>
-
-  <nav>
-    <i class="fa-solid fa-chevron-left chevron-btn left-btn"></i>
-    <div class="menu-wrapper">
-        <div class="menu-tabs">
-            <span data-target="best-sellers">Best Seller</span>
-            <span data-target="appetizers-starters">Appetizers / Starters</span>
-            <span data-target="soups">Soups</span>
-            <span data-target="noodles">Noodles</span>
-            <span data-target="rice-meals-entrees">Rice Meals / Entrées</span>
-            <span data-target="desserts">Desserts</span>
-            <span data-target="drinks">Drinks</span>
+    <header>
+        <div class="top-header">
+            <img src="assets/logo.png" alt="Logo">
         </div>
-    </div>
-    <i class="fa-solid fa-chevron-right chevron-btn right-btn"></i>
-  </nav>
-
-  <div class="nav-divider"></div>
-
-  <div class="menu-divider"></div>
-
-  <main>
-    <!-- ATIERA MENU -->
-    <div class="left-side menu">
-
-        <h1 class="menu-title">Thai Casual Dining Menu</h1>
-        <p class="menu-subtitle">Exclusively for Hotel Guests</p>
-
-        <!-- Best Sellers Section -->
-        <div class="scrollable-menu">
-            <div id="best-sellers">
-                <h2 class="best-seller">Best Sellers</h2>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Pad Thai.jpg" class="menu-card-img" alt="Pad Thai"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Pad Thai</h3>
-                        <p class="menu-item-desc">Traditional Thai rice noodles stir-fried in a sweet-savory tamarind sauce,<br>
-                            with sautéed tofu, egg, bean sprouts, and crushed peanuts. Served with your<br>
-                            choice of shrimp or chicken, and finished with a wedge of lime for balance.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱399</span>
-                        </div>
+        <nav class="menu-nav">
+            <div class="left-nav">
+                <i class="fa-solid fa-chevron-left chevron-btn left-btn"></i>
+                <div class="menu-wrapper">
+                    <div class="menu-tabs">
+                        <span data-target="best-sellers">Best Seller</span>
+                        <span data-target="appetizers-starters">Appetizers / Starters</span>
+                        <span data-target="soups">Soups</span>
+                        <span data-target="noodles">Noodles</span>
+                        <span data-target="rice-meals-entrees">Rice Meals / Entrées</span>
+                        <span data-target="desserts">Desserts</span>
+                        <span data-target="drinks">Drinks</span>
                     </div>
                 </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Tom Yum Soup.jpg" class="menu-card-img" alt="Tom Yum"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Tom Yum Soup</h3>
-                        <p class="menu-item-desc">A hot and sour Thai soup made with fragrant herbs, mushrooms, and your choice<br>
-                            of shrimp or chicken. Finished with a touch of lime for a bold, zesty flavor.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱490</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Mango Sticky Rice.jpg" class="menu-card-img" alt="Mango Sticky Rice"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Mango Sticky Rice</h3>
-                        <p class="menu-item-desc">Sweet ripe mango served with coconut-infused sticky rice, topped with a drizzle <br>
-                            of coconut cream and a sprinkle of toasted mung beans.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱249</span>
-                        </div>
-                    </div>
-                </div>
+                <i class="fa-solid fa-chevron-right chevron-btn right-btn"></i>
             </div>
-
-            <!-- Appetizers / Starters Section -->
-            <div id="appetizers-starters">
-                <h2 class="menu-section">Appetizers / Starters</h2>
-                <div class="menu-card">
-                    <img src="assets/menu/Thai Spring Roll.jpg" class="menu-card-img" alt="Thai Spring Roll"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Thai Spring Roll</h3>
-                        <p class="menu-item-desc">Crispy, golden-fried rolls stuffed with a savory mix of vegetables and glass <br>
-                            noodles. Served with a sweet chili sauce for that perfect balance of crunch and <br>
-                            flavor.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱180</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Chicken Satay.jpg" class="menu-card-img" alt="Chicken Satay"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Chicken Satay</h3>
-                        <p class="menu-item-desc">Juicy strips of marinated chicken, grilled on skewers and served with a rich, <br>
-                            creamy peanut sauce. Comes with a side of lightly pickled vegetables to refresh <br>
-                            the palate.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱220</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Shrimp Cakes (Tod Mun Goong).jpg" class="menu-card-img" alt="Shrimp Cakes"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Tod Mun Goong (Shrimp Cakes)</h3>
-                        <p class="menu-item-desc">Minced shrimp blended with Thai herbs and spices, shaped into patties and deep- <br>
-                            fried until golden. Paired with a sweet plum dipping sauce that enhances every <br>
-                            bite.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱250</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Papaya Salad (Som Tum).jpg" class="menu-card-img" alt="Papaya Salad"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Som Tum (Papaya Salad)</h3>
-                        <p class="menu-item-desc">A fresh, crunchy salad made with shredded green papaya, tomatoes, peanuts, and <br>
-                            chili. Tossed in a tangy lime-fish sauce dressing that’s sweet, sour, and spicy all at <br>
-                            once.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱220</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Crispy Tofu with Chili Sauce.jpg" class="menu-card-img" alt="Crispy Tofu with Chili Sauce"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Crispy Tofu with Chili Sauce</h3>
-                        <p class="menu-item-desc">Golden cubes of tofu fried to perfection, crispy outside and soft inside. Served <br>
-                            with a garlic chili dipping sauce for a simple yet flavorful plant-based starter.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱250</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soups Section-->
-            <div id="soups">
-                <h2 class="menu-section">Soups</h2>
-                
-                <div class="menu-card">
-                    <img src="assets/menu/Tom Kha (Coconut Soup).jpg" class="menu-card-img" alt="Tom Kha (Coconut Soup)"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Tom Kha (Coconut Soup)</h3>
-                        <p class="menu-item-desc">A rich, creamy coconut milk soup infused with galangal, lemongrass, and lime. <br>
-                            Comes with chicken or tofu, mushrooms, and a gentle balance of sweet, sour, <br>
-                            and mildly spicy flavors.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱240</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Tom Yum Soup.jpg" class="menu-card-img" alt="TTom Yum Soup"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Tom Yum Soup</h3>
-                        <p class="menu-item-desc">A hot and sour Thai soup made with fragrant herbs, mushrooms, and your choice <br>
-                            of shrimp or chicken. Finished with a touch of lime for a bold, zesty flavor.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱490</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="menu-card">
-                    <img src="assets/menu/Thai Clear Soup with Tofu & Veggies.jpg" class="menu-card-img" alt="Thai Clear Soup with Tofu & Veggies"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Thai Clear Soup with Tofu & Veggies</h3>
-                        <p class="menu-item-desc">A hot and sour Thai soup made with fragrant herbs, mushrooms, and your choice <br>
-                            of shrimp or chicken. Finished with a touch of lime for a bold, zesty flavor.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱249</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Noodles Section -->
-            <div id="noodles">
-                <h2 class="menu-section">Noodles</h2>
-                <div class="menu-card">
-                    <img src="assets/menu/Pad Thai.jpg" class="menu-card-img" alt="Pad Thai"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Pad Thai</h3>
-                        <p class="menu-item-desc">Traditional Thai rice noodles stir-fried in a sweet-savory tamarind sauce,<br>
-                            with sautéed tofu, egg, bean sprouts, and crushed peanuts. Served with your<br>
-                            choice of shrimp or chicken, and finished with a wedge of lime for balance.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱399</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Pad See Ew (Stir Fried Noodles).jpg" class="menu-card-img" alt="Pad See Ew (Stir Fried Noodles)"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Pad See Ew (Stir Fried Noodles)</h3>
-                        <p class="menu-item-desc">Wide rice noodles stir-fried in a rich soy-based sauce with egg, Chinese broccoli, <br>
-                            and your choice of chicken or beef. A hearty, slightly smoky dish that's full of <br>
-                            comforting flavors.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱250</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Pad Kee Mao (Drunken Noodles).jpg" class="menu-card-img" alt="Pad Kee Mao (Drunken Noodles)"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Pad Kee Mao (Drunken Noodles)</h3>
-                        <p class="menu-item-desc">Spicy and aromatic stir-fried rice noodles tossed with Thai basil, chilies, garlic, bell <br>
-                            peppers, and your choice of protein. A bold and flavorful dish with a fiery kick.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱260</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Rice Meals / Entrées Section -->
-            <div id="rice-meals-entrees">
-                <h2 class="menu-section">Rice Meals / Entrées</h2>
-                <div class="menu-card">
-                    <img src="assets/menu/Pad Kra Pao (Thai Basil Chicken).jpg" class="menu-card-img" alt="Pad Kra Pao (Thai Basil Chicken)"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Pad Kra Pao (Thai Basil Chicken)</h3>
-                        <p class="menu-item-desc">A spicy stir-fry of minced chicken with garlic, fresh chilies, and Thai holy basil, <br>
-                            served over jasmine rice. Topped with a crispy fried egg for a satisfying and <br>
-                            flavorful meal.
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱260</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Green Curry with Rice.jpg" class="menu-card-img" alt="Green Curry with Rice"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Green Curry with Rice</h3>
-                        <p class="menu-item-desc">A creamy and aromatic green curry made with coconut milk, green chili paste, <br>
-                            eggplant, bell peppers, and Thai basil. Served with steamed rice and your choice <br>
-                            of chicken, shrimp, or tofu.
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱280</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Thai Fried Rice.jpg" class="menu-card-img" alt="Thai Fried Rice"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Thai Fried Rice</h3>
-                        <p class="menu-item-desc">Wok-fried jasmine rice with shrimp, egg, garlic, onions, and mixed vegetables, <br>
-                            seasoned with light soy sauce and fish sauce. 
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱350</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Desserts Section -->
-            <div id="desserts">
-                <h2 class="menu-section">Desserts</h2>
-                <div class="menu-card">
-                    <img src="assets/menu/Mango Sticky Rice.jpg" class="menu-card-img" alt="Mango Sticky Rice"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Mango Sticky Rice</h3>
-                        <p class="menu-item-desc">Sweet ripe mango served with coconut-infused sticky rice, topped with a drizzle <br>
-                            of coconut cream and a sprinkle of toasted mung beans.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱249</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Thai Coconut Ice Cream.jpg" class="menu-card-img" alt="Thai Coconut Ice Cream"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Thai Coconut Ice Cream</h3>
-                        <p class="menu-item-desc">Rich and silky homemade-style coconut ice cream served with crushed <br>
-                            peanuts and a drizzle of sweet coconut milk. Light, refreshing, and perfect for <br>
-                            tropical weather.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱249</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Banana Spring Rolls with Honey.jpg" class="menu-card-img" alt="Fried Banana Rolls with Honey"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Fried Banana Rolls with Honey</h3>
-                        <p class="menu-item-desc">Crispy golden banana spring rolls drizzled with honey and a touch of sesame <br>
-                            seeds. Served warm — sweet, crunchy, and irresistibly comforting.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱249</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Drinks Section -->
-            <div id="drinks">
-                <h2 class="menu-section">Drinks</h2>
-                <div class="menu-card">
-                    <img src="assets/menu/Apple Iced Tea.jpg" class="menu-card-img" alt="Apple Iced Tea"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Apple Iced Tea</h3>
-                        <p class="menu-item-desc">A light and fruity blend of black tea infused with natural apple flavor. <br>
-                            Served chilled over ice — crisp, refreshing, and perfect for a soothing break.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱140</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Thai Iced Coffee.jpg" class="menu-card-img" alt="Thai Iced Coffee"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Thai Iced Tea</h3>
-                        <p class="menu-item-desc">Bold Thai-style coffee served over ice with sweet milk and sugar. Smooth, strong, <br>
-                            and satisfyingly sweet with every sip.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱190</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Lemongrass Iced Tea.jpg" class="menu-card-img" alt="Lemongrass Iced Tea"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Lemongrass Iced Tea</h3>
-                        <p class="menu-item-desc">A naturally caffeine-free herbal tea infused with fresh lemongrass. Light, citrusy, <br>
-                            and wonderfully refreshing — great as a non-sweet option.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱190</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Calamansi Honey Cooler.jpg" class="menu-card-img" alt="Calamansi Honey Cooler"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Lemongrass Iced Tea</h3>
-                        <p class="menu-item-desc">A zesty and soothing drink made with fresh calamansi juice and wild honey. <br>
-                            Served over ice for a sweet-tangy boost.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱180</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="assets/menu/Water Bottled.jpg" class="menu-card-img" alt="Bottled Water"/>
-                    <div class="menu-text">
-                        <h3 class="menu-item-title">Bottled Water</h3>
-                        <p class="menu-item-desc">Clean and refreshing water, purified for everyday hydration. Best served cold for a <br>
-                            crisp, thirst-quenching sip.
-                        </p>
-                        <div class="menu-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <span class="menu-price">₱50</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="center-line">
-
-        <div class="right-side cart">
-            <div class="right-side cart">
-                <div>
+            <div class="right-nav">
+                <div class="left-block">
                     <p class="get-order">How would you like to get your order?</p>
                     <div class="choose-wrapper-order">
                         <span class="choose-get-order">Choose...</span>
                         <i class="fas fa-chevron-down choose-icon"></i>
                     </div>
                 </div>
-                
-
-                <div>
+                <div class="right-block">
                     <p class="when">When?</p>
                     <div class="choose-wrapper-when">
                         <span class="choose-when">Choose...</span>
@@ -452,12 +47,462 @@
                     </div>
                 </div>
             </div>
+        </nav>
+
+    </header>
+    <!-- 
+    <div class="nav-divider"></div>
+
+    <div class="menu-divider"></div> -->
+
+    <main>
+
+        <div class="left-container">
+            <div class="left-container-header">
+                <h1 class="menu-title">Thai Casual Dining Menu</h1>
+                <p class="menu-subtitle">Exclusively for Hotel Guests</p>
+            </div>
+            <div class="scrollable-menu">
+                <div id="best-sellers">
+                    <h2 class="best-seller">Best Sellers</h2>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Pad Thai.jpg" class="menu-card-img" alt="Pad Thai" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Pad Thai</h3>
+                            <p class="menu-item-desc">Traditional Thai rice noodles stir-fried in a sweet-savory
+                                tamarind sauce,
+                                with sautéed tofu, egg, bean sprouts, and crushed peanuts. Served with your
+                                choice of shrimp or chicken, and finished with a wedge of lime for balance.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱399</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Tom Yum Soup.jpg" class="menu-card-img" alt="Tom Yum" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Tom Yum Soup</h3>
+                            <p class="menu-item-desc">A hot and sour Thai soup made with fragrant herbs, mushrooms, and
+                                your choice
+                                of shrimp or chicken. Finished with a touch of lime for a bold, zesty flavor.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱490</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Mango Sticky Rice.jpg" class="menu-card-img" alt="Mango Sticky Rice" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Mango Sticky Rice</h3>
+                            <p class="menu-item-desc">Sweet ripe mango served with coconut-infused sticky rice, topped
+                                with a drizzle
+                                of coconut cream and a sprinkle of toasted mung beans.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱249</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appetizers / Starters Section -->
+                <div id="appetizers-starters">
+                    <h2 class="menu-section">Appetizers / Starters</h2>
+                    <div class="menu-card">
+                        <img src="assets/menu/Thai Spring Roll.jpg" class="menu-card-img" alt="Thai Spring Roll" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Thai Spring Roll</h3>
+                            <p class="menu-item-desc">Crispy, golden-fried rolls stuffed with a savory mix of vegetables
+                                and glass
+                                noodles. Served with a sweet chili sauce for that perfect balance of crunch and
+                                flavor.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱180</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Chicken Satay.jpg" class="menu-card-img" alt="Chicken Satay" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Chicken Satay</h3>
+                            <p class="menu-item-desc">Juicy strips of marinated chicken, grilled on skewers and served
+                                with a rich,
+                                creamy peanut sauce. Comes with a side of lightly pickled vegetables to refresh
+                                the palate.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱220</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Shrimp Cakes (Tod Mun Goong).jpg" class="menu-card-img"
+                            alt="Shrimp Cakes" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Tod Mun Goong (Shrimp Cakes)</h3>
+                            <p class="menu-item-desc">Minced shrimp blended with Thai herbs and spices, shaped into
+                                patties and deep-
+                                fried until golden. Paired with a sweet plum dipping sauce that enhances every
+                                bite.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱250</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Papaya Salad (Som Tum).jpg" class="menu-card-img" alt="Papaya Salad" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Som Tum (Papaya Salad)</h3>
+                            <p class="menu-item-desc">A fresh, crunchy salad made with shredded green papaya, tomatoes,
+                                peanuts, and
+                                chili. Tossed in a tangy lime-fish sauce dressing that’s sweet, sour, and spicy all at
+
+                                once.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱220</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Crispy Tofu with Chili Sauce.jpg" class="menu-card-img"
+                            alt="Crispy Tofu with Chili Sauce" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Crispy Tofu with Chili Sauce</h3>
+                            <p class="menu-item-desc">Golden cubes of tofu fried to perfection, crispy outside and soft
+                                inside. Served
+                                with a garlic chili dipping sauce for a simple yet flavorful plant-based starter.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱250</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soups Section-->
+                <div id="soups">
+                    <h2 class="menu-section">Soups</h2>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Tom Kha (Coconut Soup).jpg" class="menu-card-img"
+                            alt="Tom Kha (Coconut Soup)" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Tom Kha (Coconut Soup)</h3>
+                            <p class="menu-item-desc">A rich, creamy coconut milk soup infused with galangal,
+                                lemongrass, and lime.
+                                Comes with chicken or tofu, mushrooms, and a gentle balance of sweet, sour,
+                                and mildly spicy flavors.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱240</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Tom Yum Soup.jpg" class="menu-card-img" alt="TTom Yum Soup" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Tom Yum Soup</h3>
+                            <p class="menu-item-desc">A hot and sour Thai soup made with fragrant herbs, mushrooms, and
+                                your choice
+                                of shrimp or chicken. Finished with a touch of lime for a bold, zesty flavor.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱490</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Thai Clear Soup with Tofu & Veggies.jpg" class="menu-card-img"
+                            alt="Thai Clear Soup with Tofu & Veggies" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Thai Clear Soup with Tofu & Veggies</h3>
+                            <p class="menu-item-desc">A hot and sour Thai soup made with fragrant herbs, mushrooms, and
+                                your choice
+                                of shrimp or chicken. Finished with a touch of lime for a bold, zesty flavor.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱249</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noodles Section -->
+                <div id="noodles">
+                    <h2 class="menu-section">Noodles</h2>
+                    <div class="menu-card">
+                        <img src="assets/menu/Pad Thai.jpg" class="menu-card-img" alt="Pad Thai" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Pad Thai</h3>
+                            <p class="menu-item-desc">Traditional Thai rice noodles stir-fried in a sweet-savory
+                                tamarind sauce,
+                                with sautéed tofu, egg, bean sprouts, and crushed peanuts. Served with your
+                                choice of shrimp or chicken, and finished with a wedge of lime for balance.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱399</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Pad See Ew (Stir Fried Noodles).jpg" class="menu-card-img"
+                            alt="Pad See Ew (Stir Fried Noodles)" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Pad See Ew (Stir Fried Noodles)</h3>
+                            <p class="menu-item-desc">Wide rice noodles stir-fried in a rich soy-based sauce with egg,
+                                Chinese broccoli,
+                                and your choice of chicken or beef. A hearty, slightly smoky dish that's full of
+                                comforting flavors.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱250</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Pad Kee Mao (Drunken Noodles).jpg" class="menu-card-img"
+                            alt="Pad Kee Mao (Drunken Noodles)" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Pad Kee Mao (Drunken Noodles)</h3>
+                            <p class="menu-item-desc">Spicy and aromatic stir-fried rice noodles tossed with Thai basil,
+                                chilies, garlic, bell
+                                peppers, and your choice of protein. A bold and flavorful dish with a fiery kick.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱260</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rice Meals / Entrées Section -->
+                <div id="rice-meals-entrees">
+                    <h2 class="menu-section">Rice Meals / Entrées</h2>
+                    <div class="menu-card">
+                        <img src="assets/menu/Pad Kra Pao (Thai Basil Chicken).jpg" class="menu-card-img"
+                            alt="Pad Kra Pao (Thai Basil Chicken)" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Pad Kra Pao (Thai Basil Chicken)</h3>
+                            <p class="menu-item-desc">A spicy stir-fry of minced chicken with garlic, fresh chilies, and
+                                Thai holy basil,
+                                served over jasmine rice. Topped with a crispy fried egg for a satisfying and
+                                flavorful meal.
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱260</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Green Curry with Rice.jpg" class="menu-card-img"
+                            alt="Green Curry with Rice" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Green Curry with Rice</h3>
+                            <p class="menu-item-desc">A creamy and aromatic green curry made with coconut milk, green
+                                chili paste,
+                                eggplant, bell peppers, and Thai basil. Served with steamed rice and your choice
+                                of chicken, shrimp, or tofu.
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱280</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Thai Fried Rice.jpg" class="menu-card-img" alt="Thai Fried Rice" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Thai Fried Rice</h3>
+                            <p class="menu-item-desc">Wok-fried jasmine rice with shrimp, egg, garlic, onions, and mixed
+                                vegetables,
+                                seasoned with light soy sauce and fish sauce.
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱350</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts Section -->
+                <div id="desserts">
+                    <h2 class="menu-section">Desserts</h2>
+                    <div class="menu-card">
+                        <img src="assets/menu/Mango Sticky Rice.jpg" class="menu-card-img" alt="Mango Sticky Rice" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Mango Sticky Rice</h3>
+                            <p class="menu-item-desc">Sweet ripe mango served with coconut-infused sticky rice, topped
+                                with a drizzle
+                                of coconut cream and a sprinkle of toasted mung beans.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱249</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Thai Coconut Ice Cream.jpg" class="menu-card-img"
+                            alt="Thai Coconut Ice Cream" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Thai Coconut Ice Cream</h3>
+                            <p class="menu-item-desc">Rich and silky homemade-style coconut ice cream served with
+                                crushed
+                                peanuts and a drizzle of sweet coconut milk. Light, refreshing, and perfect for
+                                tropical weather.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱249</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Banana Spring Rolls with Honey.jpg" class="menu-card-img"
+                            alt="Fried Banana Rolls with Honey" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Fried Banana Rolls with Honey</h3>
+                            <p class="menu-item-desc">Crispy golden banana spring rolls drizzled with honey and a touch
+                                of sesame
+                                seeds. Served warm — sweet, crunchy, and irresistibly comforting.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱249</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks Section -->
+                <div id="drinks">
+                    <h2 class="menu-section">Drinks</h2>
+                    <div class="menu-card">
+                        <img src="assets/menu/Apple Iced Tea.jpg" class="menu-card-img" alt="Apple Iced Tea" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Apple Iced Tea</h3>
+                            <p class="menu-item-desc">A light and fruity blend of black tea infused with natural apple
+                                flavor.
+                                Served chilled over ice — crisp, refreshing, and perfect for a soothing break.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱140</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Thai Iced Coffee.jpg" class="menu-card-img" alt="Thai Iced Coffee" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Thai Iced Tea</h3>
+                            <p class="menu-item-desc">Bold Thai-style coffee served over ice with sweet milk and sugar.
+                                Smooth, strong,
+                                and satisfyingly sweet with every sip.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱190</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Lemongrass Iced Tea.jpg" class="menu-card-img"
+                            alt="Lemongrass Iced Tea" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Lemongrass Iced Tea</h3>
+                            <p class="menu-item-desc">A naturally caffeine-free herbal tea infused with fresh
+                                lemongrass. Light, citrusy,
+                                and wonderfully refreshing — great as a non-sweet option.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱190</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Calamansi Honey Cooler.jpg" class="menu-card-img"
+                            alt="Calamansi Honey Cooler" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Lemongrass Iced Tea</h3>
+                            <p class="menu-item-desc">A zesty and soothing drink made with fresh calamansi juice and
+                                wild honey.
+                                Served over ice for a sweet-tangy boost.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱180</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="assets/menu/Water Bottled.jpg" class="menu-card-img" alt="Bottled Water" />
+                        <div class="menu-text">
+                            <h3 class="menu-item-title">Bottled Water</h3>
+                            <p class="menu-item-desc">Clean and refreshing water, purified for everyday hydration. Best
+                                served cold for a
+                                crisp, thirst-quenching sip.
+                            </p>
+                            <div class="menu-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <span class="menu-price">₱50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-  </main>
-  <script src="online-ordering.js"></script>
-  <p>Hello, My Lolove!</p>
-  <p>I Love you Lolove ko</p>
-  <p>haha
-  </p>
+
+        <div class="right-container">
+            <h1>right Container</h1>
+        </div>
+
+
+        <!-- <div class="left-side menu">
+            <h1 class="menu-title">Thai Casual Dining Menu</h1>
+            <p class="menu-subtitle">Exclusively for Hotel Guests</p>
+        </div> -->
+
+    </main>
+    <script src="online-ordering.js"></script>
 </body>
+
 </html>

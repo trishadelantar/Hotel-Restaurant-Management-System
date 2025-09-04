@@ -13,6 +13,12 @@ body {
 }
 
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.top-header {
     width: 100%;
     height: 66px;
     background-color: #8B2323;
@@ -21,22 +27,51 @@ header {
     padding-left: 24px;
 }
 
-header img {
+.top-header img {
     width: 147px;
     height: 44px;
     object-fit: contain;
 }
 
-nav {
-    margin-top: 36px;
-    padding-left: 24px;
+.menu-nav {
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 84px;
+    border-bottom: 0.5px solid #a3a3a3;
+    overflow: hidden;
+}
+
+.left-nav {
+    padding: 30px 24px;
     display: flex;
     align-items: center;
     gap: 12px;
+    background: white;
+    width: 60%;
+    border-right: 0.5px solid #a3a3a3;
+    ;
+}
+
+.right-nav {
+    display: flex;
+    width: 40%;
+    align-items: stretch;
+    height: 100%;
+    /* makes children take full height */
+}
+
+.left-block {
+    border-right: 0.5px solid #a3a3a3;
+    width: 50%;
+}
+
+.right-block {
+    width: 50%;
 }
 
 .menu-wrapper {
-    width: 795px;
+    width: auto;
     overflow: hidden;
     position: relative;
 }
@@ -44,7 +79,7 @@ nav {
 .menu-tabs {
     display: flex;
     align-items: center;
-    gap: 61px;  
+    gap: 61px;
     font-size: 18px;
     font-weight: 600;
     overflow-x: auto;
@@ -69,7 +104,7 @@ nav {
     margin-top: 30px;
     width: 100%;
     height: 0.5px;
-    background-color: #808080;
+    background-color: #a3a3a3;
     margin-left: auto;
     margin-right: auto;
 }
@@ -78,21 +113,42 @@ nav {
     position: relative;
 }
 
+main {
+    background-color: #f2f2f2;
+    margin-top: 150px;
+    height: calc(100vh - 150px);
+    display: flex;
+    overflow: hidden;
+}
+
+.left-container {
+    width: 60%;
+    border-right: 0.5px solid #a3a3a3;
+    overflow: hidden;
+}
+
+.right-container {
+    width: 40%;
+}
+
+.left-container-header {
+    position: fixed;
+    background: white;
+    padding: 30px 34px;
+    width: 59.9%;
+    ;
+}
+
 .menu-title {
-    font-weight: 600; 
+    font-weight: 600;
     font-size: 25px;
     color: #1E1E1E;
-    margin-top: 30px;
-    margin-left: 34px;
 }
 
 .menu-subtitle {
     font-weight: 400;
     font-size: 14px;
     color: #808080;
-    margin-top: 8px;
-    margin-left: 34px;
-    margin-bottom: 35px;
 }
 
 .menu-section {
@@ -107,20 +163,19 @@ nav {
     font-weight: 600;
     font-size: 25px;
     color: #1E1E1E;
-    margin-left: 41.5px;
 }
 
 .menu-card {
-    width: 830px;
+    width: 100%;
     height: 190px;
-    margin-top: 21px;
-    margin-left: 41px;
+    margin-bottom: 21px;
     background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: flex-start;
     padding: 0;
     position: relative;
+    padding-right: 30px;
 }
 
 .menu-card-img {
@@ -128,7 +183,7 @@ nav {
     height: 144px;
     object-fit: cover;
     margin: 25px 0 0 20px;
-    border-radius: 50%; 
+    border-radius: 50%;
     border: 5px solid #E6B800;
     flex-shrink: 0;
 }
@@ -138,6 +193,7 @@ nav {
     flex-direction: column;
     margin-left: 20px;
     flex-direction: column;
+    width: 100%;
 }
 
 .menu-item-title {
@@ -153,7 +209,6 @@ nav {
     font-size: 16px;
     color: #808080;
     margin-bottom: 13px;
-    height: 57px;
 }
 
 .add-to-cart-btn {
@@ -196,8 +251,9 @@ nav {
 }
 
 .scrollable-menu {
-    width: 900px;
-    height: 482px;
+    width: 100%;
+    height: 100%;
+    padding: 107px 34px 80px;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -222,7 +278,7 @@ html {
     height: 692px;
     bottom: 0;
     left: 903px;
-    width: 0.5px; 
+    width: 0.5px;
     background-color: #E6B800;
 }
 
@@ -232,9 +288,9 @@ html {
     bottom: 0;
     left: 1215px;
     width: 0.5px;
-    background-color:  #808080;
+    background-color: #808080;
     height: 91px
-}   
+}
 
 .get-order {
     position: absolute;
