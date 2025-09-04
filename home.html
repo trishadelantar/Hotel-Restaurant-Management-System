@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Felipa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #8B2323;
+        height: 829px; /* fixed height */
+        color: white;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+    .bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 829px; /* same as body */
+      background: url("assets/resto-home-background.jpg") no-repeat center center;
+      background-size: cover;
+      z-index: -1;
+      opacity: 20%;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 49px;
+    }
+
+    .logo img {
+      width: 147px;
+      height: 73px;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      gap: 63px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #E6B800;
+    }
+
+    nav a.active {
+      color: #E6B800;
+    }
+
+    nav a.active::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #E6B800;
+      border-radius: 2px;
+    }
+
+    .hero-text {
+      position: absolute;
+      left: 177px;
+      top: 244px;
+      width: 484px;
+    }
+
+    .hero-text h1 {
+      font-weight: 800;
+      font-size: 60px;
+      margin: 0 0 10px 0;
+      line-height: 1.1;
+    }
+
+    .hero-text h2 {
+      font-family: 'Felipa', cursive;
+      font-weight: 400;
+      font-size: 70px;
+      margin: 0 0 20px 0;
+      line-height: 1.1;
+    }
+
+    .hero-text p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      margin: 0 0 40px 0;
+    }
+
+    .btn-row {
+      position: absolute;
+      left: 177px;
+      top: 543px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .order-btn {
+      width: 154px;
+      height: 59px;
+      background-color: #E6B800;
+      color: black;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+    }
+
+    .explore-btn {
+      width: 206px;
+      height: 59px;
+      background-color: #E6B800;
+      color: black;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .order-btn:hover,
+    .explore-btn:hover {
+      background-color: #d1a700;
+    }
+
+    .circle {
+      position: absolute;
+      left: 850px;
+      top: 203px;
+      width: 451px;
+      height: 440px;
+      background-color: #E6B800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle-img {
+      width: 445px;
+      height: 445px;
+      border-radius: 50%;
+      object-fit: cover;   
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="about-us.html">About Us</a>
+      <a href="#">Sign Up</a>
+      <a href="#" class="active">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="#">Event</a>
+    </nav>
+  </header>
+
+  <section class="hero-text">
+    <h1>Cravings?</h1>
+    <h2>We got you covered.</h2>
+    <p><br>
+      Skip the wait and satisfy your hunger in just a few taps.<br>
+      Fresh, fast, and flavorful — delivered straight to your doorstep.
+    </p>
+  </section>
+
+  <div class="btn-row">
+    <button class="order-btn" onclick="window.location.href='online-ordering.html'">Order Now</button>
+    <button class="explore-btn">Explore Menu <i class="fas fa-arrow-right"></i></button>
+  </div>
+
+  <div class="circle">
+  <img src="assets/thai food.png" alt="Framed Image" class="circle-img">
+  </div>
+
+</body>
+</html>
