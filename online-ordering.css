@@ -113,7 +113,6 @@ header {
 }
 
 main {
-    background-color: #f2f2f2;
     margin-top: 150px;
     height: calc(100vh - 150px);
     display: flex;
@@ -258,6 +257,10 @@ main {
     overflow-y: auto;
     overflow-x: hidden;
     background-color: white;
+}
+
+.scrollable-menu::-webkit-scrollbar {
+  display: none;
 }
 
 html {
