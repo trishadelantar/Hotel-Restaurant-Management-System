@@ -129,6 +129,7 @@ main {
 
 .right-container {
     width: 40%;
+    background-color: white;
 }
 
 .left-container-header {
@@ -258,6 +259,7 @@ main {
     overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    background-color: white;
 }
 
 html {
