@@ -58,7 +58,6 @@ header {
     width: 40%;
     align-items: stretch;
     height: 100%;
-    /* makes children take full height */
 }
 
 .left-block {
@@ -129,6 +128,7 @@ main {
 
 .right-container {
     width: 40%;
+    background-color: white;
 }
 
 .left-container-header {
@@ -156,7 +156,7 @@ main {
     font-size: 25px;
     color: #1E1E1E;
     margin-top: 35px;
-    margin-left: 41.5px;
+    margin-left: 0;
 }
 
 .best-seller {
@@ -252,12 +252,12 @@ main {
 
 .scrollable-menu {
     width: 100%;
-    height: 100%;
-    padding: 107px 34px 80px;
+    height: calc(100% - 150px);
+    padding: 0 34px 80px;       
+    margin-top: 105px;          
     overflow-y: auto;
     overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    background-color: white;
 }
 
 html {

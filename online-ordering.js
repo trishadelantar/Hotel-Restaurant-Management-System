@@ -62,6 +62,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll("main > .left-side.menu > .scrollable-menu > div").forEach(section => {
+document.querySelectorAll("main > .left-container > .scrollable-menu > div").forEach(section => {
   observer.observe(section);
 });
