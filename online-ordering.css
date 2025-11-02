@@ -260,7 +260,7 @@ main {
 }
 
 .scrollable-menu::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 html {
